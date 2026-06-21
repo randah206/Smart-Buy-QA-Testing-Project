@@ -13,10 +13,10 @@ Manual testing project conducted on the Smart Buy E-Commerce website.
 - Payment
 
 ## Deliverables
-- Test Scenarios
-- Test Cases
-- Bug Reports
-- Test Summary Report
+* [Test Scenarios](test%20scenarios.png)
+* [Detailed Test Cases (Excel)](Smart%20buy%20E-Commerce%20Website.xlsx)
+* [Bug Reports](Bug%20Report.png)
+* [Test Summary Dashboard](Test%20Summary%20.png)
 
 ## Test Results
 - Total Test Cases: 43
