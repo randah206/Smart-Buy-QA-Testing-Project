@@ -8,7 +8,7 @@
 ---
 
 ## 📝 Executive Summary: Quality Assessment
-The Smart Buy E-Commerce platform has transitioned to a Shopify-based architecture, which was thoroughly evaluated during regression testing on Jun 23-24, 2026. This migration has successfully addressed high-priority security vulnerabilities identified during the initial manual testing phase (Apr 27-30). Most notably, the implementation of a passwordless OTP login system has resolved previous concerns regarding brute force protection and input validation.
+The Smart Buy E-Commerce platform has transitioned to a Shopify-based architecture, which was thoroughly evaluated during regression testing on Jun 23-24, 2026. This migration has successfully addressed high-priority security vulnerabilities identified during the initial manual testing phase (Apr 27-30). Most notably, we implemented a passwordless OTP login system, which resolved previous concerns about brute force protection and input validation.
 
 Despite these improvements, two significant functional gaps remain unresolved: Arabic localisation in search and cross-device cart synchronisation. While the core transactional engine is stable and secure, these issues directly impact the user experience for the target demographic.
 
@@ -38,15 +38,19 @@ Despite these improvements, two significant functional gaps remain unresolved: A
 
 ---
 
-## 🪲 Defect Status Tracking
+## 🪲 Defect Status Tracking (Jira Integrated)
 
-| Bug ID | Summary | Severity | Status |
-| :--- | :--- | :--- | :--- |
-| **Bi01** | Brute force protection is not enforced | 🛑 High | Fixed (Jun 23, 2026) |
-| **Bi02** | Name fields accept invalid characters | ⚠️ Medium | Resolved (Jun 23, 2026) |
-| **Bi03** | Arabic search suggestions missing | ⚠️ Medium | Not Resolved |
-| **Bi04** | Cart items not synchronized across devices | ⚠️ Medium | Not Resolved |
+| Bug ID | Jira Ticket | Summary | Severity | Status / Jira Board |
+| :--- | :--- | :--- | :--- | :--- |
+| **Bi01** | *Internal* | Brute force protection is not enforced | 🛑 High | 🟢 Fixed (Shopify Native) |
+| **Bi02** | **[KAN-1]** | Name fields accept invalid characters | ⚠️ Medium | ✅ **Done** (Resolved) |
+| **Bi03** | **[KAN-2]** | Arabic search suggestions missing | ⚠️ Medium | 🟦 **To Do** (On Jira Board) |
+| **Bi04** | **[KAN-3]** | Cart items not synchronized across devices | ⚠️ Medium | 🟦 **To Do** (On Jira Board) |
 
+### 📋 Jira Kanban Board Preview
+*Below is a preview of the active defect tracking and sprint management board on Jira:*
+
+![Jira Kanban Board](./Jira-board.png)
 ---
 
 ## 🚀 Strategic Recommendations
